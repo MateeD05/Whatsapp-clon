@@ -1,0 +1,112 @@
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--esp-2);
+  min-height: 44px;
+  padding: var(--esp-2) var(--esp-4);
+  border: 1px solid transparent;
+  border-radius: var(--radio-md);
+  font-weight: 600;
+  background-color: transparent;
+  transition: background-color var(--transicion), border-color var(--transicion);
+}
+
+.boton--primario {
+  background-color: var(--acento);
+  color: var(--texto-sobre-acento);
+  width: 100%;
+}
+
+.boton--primario:hover {
+  background-color: var(--acento-fuerte);
+}
+
+.boton--secundario {
+  border-color: currentColor;
+  color: inherit;
+}
+
+.boton--secundario:hover {
+  background-color: rgba(127, 127, 127, 0.22);
+}
+
+.boton--icono {
+  min-width: 44px;
+  padding: var(--esp-2);
+  border-radius: var(--radio-full);
+  font-size: var(--texto-lg);
+  line-height: 1;
+}
+
+.boton--icono:hover {
+  background-color: rgba(127, 127, 127, 0.22);
+}
+
+.boton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.avatar {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: var(--avatar-tam, 48px);
+  height: var(--avatar-tam, 48px);
+  border-radius: var(--radio-full);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: calc(var(--avatar-tam, 48px) * 0.36);
+  letter-spacing: 0.5px;
+  user-select: none;
+}
+
+.avatar--sm {
+  --avatar-tam: 40px;
+}
+
+.avatar--lg {
+  --avatar-tam: 56px;
+}
+
+.badge {
+  display: inline-grid;
+  place-items: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: var(--radio-full);
+  background-color: var(--acento);
+  color: var(--texto-sobre-acento);
+  font-size: var(--texto-xs);
+  font-weight: 700;
+}
+
+.estado-vacio {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--esp-3);
+  padding: var(--esp-6) var(--esp-4);
+  text-align: center;
+  color: var(--texto-suave);
+}
+
+.estado-vacio__icono {
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+.estado-vacio__titulo {
+  font-size: var(--texto-lg);
+  font-weight: 700;
+  color: var(--texto-fuerte);
+}
+
+.estado-vacio__texto {
+  max-width: 44ch;
+  font-size: var(--texto-sm);
+}

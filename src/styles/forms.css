@@ -1,0 +1,91 @@
+.login {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: var(--esp-4);
+  background-color: var(--fondo-app);
+}
+
+.login__tarjeta {
+  width: 100%;
+  max-width: 420px;
+  padding: var(--esp-5);
+  border-radius: var(--radio-lg);
+  border: 1px solid var(--borde);
+  background-color: var(--fondo-panel);
+  box-shadow: var(--sombra);
+}
+
+.login__encabezado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-2);
+  margin-bottom: var(--esp-5);
+  text-align: center;
+}
+
+.login__titulo {
+  font-size: var(--texto-xl);
+  font-weight: 700;
+}
+
+.login__bajada {
+  font-size: var(--texto-sm);
+  color: var(--texto-suave);
+}
+
+.login__acciones-extra {
+  margin-top: var(--esp-4);
+  display: flex;
+  justify-content: center;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-2);
+  margin-bottom: var(--esp-4);
+}
+
+.campo__label {
+  font-size: var(--texto-sm);
+  font-weight: 600;
+}
+
+.campo__input {
+  width: 100%;
+  min-height: 44px;
+  padding: var(--esp-2) var(--esp-3);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio-md);
+  background-color: var(--fondo-panel);
+  color: var(--texto-fuerte);
+}
+
+.campo__input::placeholder {
+  color: var(--texto-suave);
+  opacity: 1;
+}
+
+.campo__input[aria-invalid='true'] {
+  border-color: var(--error);
+  border-width: 2px;
+}
+
+.campo__ayuda {
+  font-size: var(--texto-xs);
+  color: var(--texto-suave);
+}
+
+.campo__error {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--esp-2);
+  padding: var(--esp-2) var(--esp-3);
+  border-radius: var(--radio-sm);
+  background-color: var(--error-fondo);
+  color: var(--error);
+  font-size: var(--texto-sm);
+  font-weight: 600;
+}

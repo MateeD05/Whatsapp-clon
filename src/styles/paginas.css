@@ -1,0 +1,55 @@
+.pagina-centrada {
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  padding: var(--esp-4);
+  background-color: var(--fondo-app);
+}
+
+.pagina-centrada__tarjeta {
+  width: 100%;
+  max-width: 480px;
+  padding: var(--esp-5);
+  border-radius: var(--radio-lg);
+  border: 1px solid var(--borde);
+  background-color: var(--fondo-panel);
+  box-shadow: var(--sombra);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-3);
+}
+
+.pagina-centrada__codigo {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--acento-fuerte);
+}
+
+.pagina-centrada__titulo {
+  font-size: var(--texto-xl);
+  font-weight: 700;
+}
+
+.pagina-centrada__texto {
+  font-size: var(--texto-sm);
+  color: var(--texto-suave);
+}
+
+.pagina-centrada__enlace {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: var(--esp-2) var(--esp-4);
+  border-radius: var(--radio-md);
+  background-color: var(--acento);
+  color: var(--texto-sobre-acento);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pagina-centrada__enlace:hover {
+  background-color: var(--acento-fuerte);
+}

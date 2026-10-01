@@ -1,0 +1,120 @@
+.app {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--fondo-app);
+}
+
+.app__contenedor {
+  flex: 1;
+  width: 100%;
+  max-width: var(--ancho-max-app);
+  margin: 0 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-app {
+  background-color: var(--acento);
+  color: var(--texto-sobre-acento);
+}
+
+.header-app__interior {
+  max-width: var(--ancho-max-app);
+  margin: 0 auto;
+  min-height: var(--alto-header);
+  padding: var(--esp-2) var(--esp-3);
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  flex-wrap: wrap;
+}
+
+.header-app__marca {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-2);
+  margin-right: auto;
+  min-width: 0;
+}
+
+.header-app__titulo {
+  font-size: var(--texto-lg);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.header-app__usuario {
+  font-size: var(--texto-sm);
+  font-weight: 600;
+  max-width: 40vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-app__acciones {
+  display: flex;
+  align-items: center;
+  gap: var(--esp-2);
+}
+
+.panel-zona {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  background-color: var(--fondo-panel);
+  overflow: hidden;
+}
+
+.panel {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel--lista {
+  border-right: 1px solid var(--borde);
+  background-color: var(--fondo-panel);
+}
+
+.panel--conversacion {
+  background-color: var(--fondo-chat);
+}
+
+@media (min-width: 768px) {
+  .panel--lista {
+    flex: 0 0 var(--ancho-lista);
+    width: var(--ancho-lista);
+  }
+
+  .panel--conversacion {
+    flex: 1;
+  }
+
+  .solo-mobile {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .panel--lista {
+    flex-basis: 400px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1700px) {
+  .app__contenedor {
+    padding: var(--esp-4) var(--esp-4) var(--esp-4);
+  }
+
+  .panel-zona {
+    border-radius: var(--radio-lg);
+    border: 1px solid var(--borde);
+    box-shadow: var(--sombra);
+  }
+}
